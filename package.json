@@ -1,0 +1,23 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypressRun": ".\\node_modules\\.bin\\cypress run",
+    "headtest": "npm run cypressRun -- --headed",
+    "chrometest": "npm run cypressRun -- --browser chrome",
+    "recordDashboard": "npm run cypressRun -- --record --key f4f7d577-aa63-446e-bec3-a17962ebae08",
+    "doubleTest": "npm run cypressRun -- --spec \"cypress/integration/test7.cy.js,cypress/integration/test2.cy.js\"",
+    "test": "npm install cypress --save-dev",
+    "test1": ".\\node_modules\\.bin\\cypress verify",
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.10.0",
+    "cypress-iframe": "^1.0.1"
+  }
+}
